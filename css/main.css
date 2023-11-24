@@ -1,0 +1,81 @@
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.hidden {
+    display: none;
+}
+
+header {
+    background-color: #608B6A;
+    color: #FECDCD;
+    text-align: center;
+    height: 95px;
+}
+
+#headertext {
+    padding: 21px;
+    font-size: 40px;
+}
+
+body {
+    background-image: url(../img/background.webp);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-family: 'Pixelify Sans', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+article {
+
+    background-color: #FECDCD;
+    border: 3px solid #FF9EDB;
+    border-radius: 15px;
+    width: 279px;
+    height: 191px;
+    margin: 95px 68px;
+    
+    padding: 6px;
+    text-align: left;
+}
+
+article h2 {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    margin: 15px 5px;
+}
+
+ul li {
+    padding: 3px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    color: black;
+}
+
+/*1F422 for turtle*/
+input[type=checkbox]:checked + span::after {
+    content: '\1F422';
+    width: 25px;
+    margin-left: 10px;
+}
+
+#inprogress input[type=checkbox]:checked + span {
+    color: yellow;
+}
+
+#completed input[type=checkbox]:checked + span {
+    color: red;
+
+}
